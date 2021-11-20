@@ -4,14 +4,13 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 import java.time.LocalDateTime;
 
-@Table("users")
+@Table("user_native")
 public class UserAccount {
     @Id
     private Long id;
     private String username;
     private String password; // hash
     private String avatar; // avatar url
-    private String avatarBig; // avatar url
     private boolean expired;
     private boolean locked;
     private boolean enabled; // synonym to "confirmed"
@@ -20,14 +19,6 @@ public class UserAccount {
     private LocalDateTime lastLoginDateTime;
 
     public UserAccount() { }
-
-    public String getAvatarBig() {
-        return avatarBig;
-    }
-
-    public void setAvatarBig(String avatarBig) {
-        this.avatarBig = avatarBig;
-    }
 
     public Long getId() {
         return id;
