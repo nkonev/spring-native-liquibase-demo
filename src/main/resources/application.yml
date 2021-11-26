@@ -6,5 +6,5 @@ spring:
     username: aaa
     password: "aaaPazZw0rd"
 
-  flyway:
-    locations: classpath:/migration
+  liquibase:
+    change-log: classpath:/db/changelog.xml
