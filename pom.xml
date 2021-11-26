@@ -60,7 +60,7 @@
 				<configuration>
 					<classifier>${repackage.classifier}</classifier>
 					<image>
-						<builder>paketobuildpacks/builder:tiny</builder>
+						<builder>paketobuildpacks/builder:base</builder>
 						<env>
 							<BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE>
 						</env>
